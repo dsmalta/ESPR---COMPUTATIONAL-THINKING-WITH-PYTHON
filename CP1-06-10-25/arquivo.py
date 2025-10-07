@@ -13,11 +13,11 @@ else:
         salario_reajuste = salario * 1.0645
         print(salario)
 
-    elif salario > salario_min * 2 or salario <= salario_min * 5:
+    elif salario > salario_min * 2 and salario <= salario_min * 5:
         salario_reajuste = salario * 1.0455
         print(salario)
 
-    elif salario > salario_min * 5 or salario <= salario_min * 10:
+    elif salario > salario_min * 5 and salario <= salario_min * 10:
         salario_reajuste = salario * 1.0289
         print(salario)
 

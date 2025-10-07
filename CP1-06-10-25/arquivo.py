@@ -1,6 +1,12 @@
 salario_min = 1302
 salario = int(input("Salário: "))
-qtd_faltas = int(input("Qtd. de Faltas: "))
+
+# Print do Erro
+if salario < 0:
+    print("ERRO! Digite um salário positivo!")
+
+else: 
+    qtd_faltas = int(input("Qtd. de Faltas: "))
 
 # Salário reajustado
 if salario <= salario_min * 2:

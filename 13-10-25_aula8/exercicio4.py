@@ -34,7 +34,7 @@ while tentativas < limite_tentativas:
         print("Você desistiu do jogo")
         break
 
-    if tentativas == num_secreto:
+    elif tentativas == num_secreto:
         print(f"Parabéns! Você acertou em {tentativas} tentativa(s)!")
         break
 

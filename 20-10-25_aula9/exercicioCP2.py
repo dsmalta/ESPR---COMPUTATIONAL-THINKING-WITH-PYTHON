@@ -1,4 +1,4 @@
-num_alunos = int(input("Quantos anos há na turma? "))
+num_alunos = int(input("Quantos alunos há na turma? "))
 conta_aluno = 1
 alunos_aprovados = 0
 alunos_reprovados = 0

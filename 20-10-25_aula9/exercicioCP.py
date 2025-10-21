@@ -11,13 +11,11 @@ while conta_aluno <= num_alunos:
     # Erro caso a nota seja menor que 0 ou maior que 10
     while nota1 < 0 or nota1 > 10:
         nota1 = int(input("Digite uma nota válida entre 0 e 10. Nota: "))
-        continue
-    
+        
     nota2 = int(input("Nota 2: "))
     # Erro caso a nota seja menor que 0 ou maior que 10
     while nota2 < 0 or nota2 > 10:
         nota2 = int(input("Digite uma nota válida entre 0 e 10. Nota: "))
-        continue
         
     #Calcula a média dos alunos
     media_aluno = (nota1 + nota2)/2

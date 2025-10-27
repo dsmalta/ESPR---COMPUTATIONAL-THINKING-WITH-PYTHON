@@ -11,10 +11,9 @@ for numeros in range (1, 51, 1):
     print(numeros)
     
 # Fatorial
-
 num_escolhido = int(input("Numero escolhido: "))
 resultado = 1
 
 for numeros in range(num_escolhido, 0, -1):
-    resultado = resultado  * numeros
+    resultado = resultado * numeros
     print(resultado)

@@ -16,7 +16,6 @@ while numero != 0:
 print(soma)
 
 # Senha correta
-
 senha = 1234
 senha_adivinha = int(input("Tente adivinhar a senha: "))
 while senha_adivinha != senha:
@@ -27,4 +26,4 @@ if senha_adivinha == senha:
     
 # Numeros pares e impares
 
-nums_escolhidos = int
+# nums_escolhidos = int

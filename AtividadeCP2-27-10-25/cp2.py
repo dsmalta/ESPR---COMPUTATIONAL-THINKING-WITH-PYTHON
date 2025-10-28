@@ -24,11 +24,9 @@ for conta_aluno in range(10):
     if nota1 == -1 and conta_aluno != 0:
         print("Encerrando médias...\n")
         media_turma = media_turma
-        conta_aluno = conta_aluno + 1
+        conta_aluno = conta_aluno 
         break
 
-   
-    
     # Erro caso a nota seja menor que 0 ou maior que 10
     while nota1 < 0 or nota1 > 10:
         nota1 = int(input("Digite uma nota válida entre 0 e 10. Nota: "))

@@ -70,7 +70,7 @@ reprov_porcent = (alunos_reprovados / conta_aluno) * 100
 media_turma = media_turma/conta_aluno
 
 # Exibe os resultados da turma
-print(f"\nDADOS CONSOLIDADOS\n Média da turma: {media_turma:.1f}\n Aprovados: {aprov_porcent:.1f}%\n Exame: {exame_porcent:.1f}\n Reprovados: {reprov_porcent:.1f}%")   
+print(f"\nDADOS CONSOLIDADOS\n Média da turma: {media_turma:.2f}\n Aprovados: {aprov_porcent:.1f}%\n Exame: {exame_porcent:.1f}\n Reprovados: {reprov_porcent:.1f}%")   
 
 
 

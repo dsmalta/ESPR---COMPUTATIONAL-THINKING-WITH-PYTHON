@@ -53,12 +53,26 @@ v = [45, -89, 32, -12, 33]
 # print(v)
 
 # Exercício 8
-ind = int(input("Digite o índice que você quer alterar: "))
+# ind = int(input("Digite o índice que você quer alterar: "))
 
-if 0 <= ind < len(v):
-    valor_ind = int(input(f"Digite um valor para o índice {ind}: "))
-    v[ind] = valor_ind
-else: 
-    print("Índice inválido")
+# if 0 <= ind < len(v):
+#     valor_ind = int(input(f"Digite um valor para o índice {ind}: "))
+#     v[ind] = valor_ind
+# else: 
+#     print("Índice inválido")
 
-print(v)
+# print(v)
+
+# Exercício 9 
+# invertido = [0, 0, 0, 0, 0]
+# for ind in range(5):
+#     invertido[4-ind] = v[ind]
+# print(v)
+# print(invertido)
+
+#Exercício 10 
+menor = v[0]
+for ind in range(1, 5, 1):
+    if v[ind] < menor:
+        menor = v[ind]
+print(f"Menor valor = {menor}")

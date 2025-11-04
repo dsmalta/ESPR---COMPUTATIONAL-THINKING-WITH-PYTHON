@@ -15,6 +15,8 @@ while True:
           6 - Fazer uma rotina que exiba na tela a soma dos elementos pares.
           7 - Fazer uma rotina que peça para o usuário preencher todos os elementos do vetor.
           8 - Fazer uma rotina que peça para o usuário preencher um índice específico do vetor.
+          9 - Crie um segundo vetor e coloque nele os elementos do primeiro valor em ordem invertida.
+          10 - Percorra o vetor e mostre o elemento de maior valor.
           """)
     opcao = input("Escolha: ")
     match opcao:
@@ -55,15 +57,25 @@ while True:
 
             print(v)
         case '8':
-            for ind in range(5):
-                ind = int(input("Digite um índice para mudar seu valor: "))
-                escolha_usuario = ind
-                
-                if ind == escolha_usuario:
-                    v[ind] = int(input("Digite um valor para o índice escolhido: "))
-                    break
+            ind = int(input("Digite o índice que você quer alterar: "))
+
+            if 0 <= ind < len(v):
+                valor_ind = int(input(f"Digite um valor para o índice {ind}: "))
+                v[ind] = valor_ind
+            else: 
+                print("Índice inválido")
 
             print(v)
-
-
+        case '9':
+            invertido = [0, 0, 0, 0, 0]
+            for ind in range(5):
+                invertido[4-ind] = v[ind]
+            print(v)
+            print(invertido)        
+        case '10':
+            menor = v[0]
+            for ind in range(1, 5, 1):
+                if v[ind] < menor:
+                    menor = v[ind]
+            print(f"Menor valor = {menor}")
     input("\nPressione algo para continuar . . . ")

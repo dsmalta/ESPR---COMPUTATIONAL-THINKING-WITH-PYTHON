@@ -11,10 +11,10 @@ while True:
           4 - Encerrar o programa
           """)
     
-    opcao = int(input("Escolha: "))
+    opcao = int(input(f"Escolha: "))
     
     while opcao < 1 or opcao > 4:
-        opcao = int(input("Opção inválida, digite um valor entre 1 e 4. "))
+        opcao = int(input(f"Opção inválida, digite um valor entre 1 e 4. "))
         
     match opcao:
         case 1:
@@ -33,8 +33,6 @@ while True:
                         
             else:
                 print(f"Essa vaga já está ocupada.")
-                
-        
         case 3:
             opcao_libera_vaga = int(input("Qual vaga você deseja liberar? "))
             ind = opcao_libera_vaga - 1

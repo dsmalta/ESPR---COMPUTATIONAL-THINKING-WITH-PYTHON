@@ -57,6 +57,7 @@ while True:
                 opcao_libera_vaga = int(input((f"Insira uma vaga válida entre 1 e 10. Vaga: ")))
             
             ind = opcao_libera_vaga - 1
+            
             if vagas[ind] == 1:
                 vagas[ind] = 0
                 print(f"Vaga liberada com sucesso!")

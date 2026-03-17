@@ -116,6 +116,21 @@ def remover_negativos(lista: list) -> list:
         if i < 0:
             lista_negativos.append(i)
     for i in lista_negativos:
-        lista.remove(i)
+        lista_maior_numero.remove(i)
+    return lista_maior_numero
 
 print(remover_negativos(lista_maior_numero))
+
+def retorna_mais_proximo(lista: list, valor: float) -> float:
+    valor = float(input('Digite um valor: '))
+    
+    for i in lista:
+        if valor == i:
+            return valor
+        
+        if valor != i:
+            valor_proximo = (i - valor) + valor   
+        return valor
+
+valor = 7
+print(retorna_mais_proximo(lista_maior_numero, valor))
